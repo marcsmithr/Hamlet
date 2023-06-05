@@ -2,8 +2,28 @@
     height: 2rem;
     width:2rem
 } */
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 .home-icon{
     height:3rem;
     width:3rem
 }
+
+.nav-home-search-column{
+    display: flex;
+    flex-direction: row;
+}
+
+.search-bar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .search-bar{
+
+} */

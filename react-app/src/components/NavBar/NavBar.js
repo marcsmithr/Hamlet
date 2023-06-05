@@ -12,19 +12,18 @@ const NavBar = () => {
           <div className='home-icon-container'>
             <img className='home-icon' src='https://i.ibb.co/6XXFb2q/dae2fd8b-4edf-4e3b-b7fe-732d0012e9e3.jpg' alt='A home icon featuring a colorful hamlet'/>
           </div>
-          <div className='search-bar-container'>
+        </div>
+        <div className='search-bar-container'>
             <div className='search-bar'>
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-
           </div>
-        </div>
       </div>
       <div className='nav-icon-column'>
-
+        hello1
       </div>
       <div className='nav-profile-column'>
-
+        hello2
       </div>
     </nav>
   );
