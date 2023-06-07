@@ -69,10 +69,27 @@ nav{
     justify-content: space-around;
 }
 
+.nav-icon-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: .5rem;
+}
+
 .fa-solid{
     color: rgba(0, 0, 0, 0.6);
 }
 
 .fa-regular{
     color: rgba(0, 0, 0, 0.6);
+}
+
+#selected{
+    border-bottom: solid .5px blue;
+}
+
+#selected>i{
+    color: blue;
+
 }
