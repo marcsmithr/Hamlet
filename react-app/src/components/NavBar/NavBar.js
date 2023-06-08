@@ -35,7 +35,7 @@ const NavBar = () => {
     console.log(selectedIcon)
   }, [selectedIcon])
   return (
-    <nav>
+    <nav className='nav-bar'>
       <div className='nav-home-search-column'>
         <div className='nav-home-column'>
 
@@ -77,7 +77,18 @@ const NavBar = () => {
 
       </div>
       <div className='nav-profile-column'>
-        hello2
+
+        <div className='profile-icon-container'>
+          <i class="fa-solid fa-message"></i>
+        </div>
+
+        <div className='profile-icon-container'>
+         <i class="fa-solid fa-bell"></i>
+        </div>
+
+        <div className='profile-icon-container'>
+          <i class="fa-solid fa-user"></i>
+        </div>
       </div>
     </nav>
   );

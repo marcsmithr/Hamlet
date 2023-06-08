@@ -2,9 +2,12 @@
     height: 2rem;
     width:2rem
 } */
-nav{
+.nav-bar{
     display: grid;
-    grid-template-columns: 3fr 6fr 3fr;
+    grid-template-columns: 2fr 3fr 2fr;
+    width: 100%;
+    border-bottom: .5px solid lightgray;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.177) ;
 }
 
 .home-icon{
@@ -84,6 +87,14 @@ nav{
     background-color: rgba(211, 211, 211, 0.4);
 }
 
+.nav-profile-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.profile-icon-container{}
 .fa-solid{
     color: rgba(0, 0, 0, 0.6);
 }
