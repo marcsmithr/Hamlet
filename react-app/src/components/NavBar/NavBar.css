@@ -10,6 +10,7 @@
     width: 100%;
     border-bottom: .5px solid lightgray;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.177) ;
+    background-color: #6ec4db;
 }
 
 .fa-solid{
@@ -123,22 +124,22 @@
     align-items: center;
     border-radius: 100%;
     margin: 0px 5px;
-    background-color: lightgrey;
+    background-color: #fff7c0;
     height: 2rem;
     width: 2rem;
 }
 
 .profile-icon-container>i{
-    color: black;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 
 
 #selected{
-    border-bottom: solid 3px #2ac57b;
+    border-bottom: solid 3px #fff7c0;
 }
 
 #selected>i{
-    color: #2ac57b;
+    color: #fff7c0;
 
 }
