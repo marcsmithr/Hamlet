@@ -35,15 +35,15 @@ const NavBar = () => {
     console.log(selectedIcon)
   }, [selectedIcon])
   return (
-    <nav>
+    <nav className='nav-bar'>
       <div className='nav-home-search-column'>
-        <div className='nav-home-column'>
+
 
           <div className='home-icon-container'>
-            <img className='home-icon' src='https://i.ibb.co/6XXFb2q/dae2fd8b-4edf-4e3b-b7fe-732d0012e9e3.jpg' alt='A home icon featuring a colorful hamlet'/>
+            <img className='home-icon' src='https://i.ibb.co/bPPwj59/hamlet-home.png' alt='A home icon featuring a colorful hamlet'/>
           </div>
 
-        </div>
+
         <div className='search-bar-container'>
 
             <div className='search-bar'>
@@ -77,7 +77,18 @@ const NavBar = () => {
 
       </div>
       <div className='nav-profile-column'>
-        hello2
+
+        <div className='profile-icon-container'>
+          <i class="fa-solid fa-message"></i>
+        </div>
+
+        <div className='profile-icon-container'>
+         <i class="fa-solid fa-bell"></i>
+        </div>
+
+        <div className='profile-icon-container'>
+          <i class="fa-solid fa-user"></i>
+        </div>
       </div>
     </nav>
   );
