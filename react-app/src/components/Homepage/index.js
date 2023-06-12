@@ -1,5 +1,6 @@
 import React from "react";
 import HomepageNav from "./HomepageNav";
+import './index.css'
 
 export default function HomePage(){
     return (
@@ -11,14 +12,14 @@ export default function HomePage(){
                     </div>
                     <div className="home-content-column">
                         <div className="create-content">
-
+                            hello1
                         </div>
                         <div className="content-feed">
-
+                            hello2
                         </div>
                     </div>
                     <div className="home-engagement-column">
-
+                        hello3
                     </div>
 
                 </div>
