@@ -1,13 +1,35 @@
 
 .home-page-nav{
     height: 100vh;
+    margin-top: 1rem;
     margin-left: 10px;
+}
+
+.home-page-nav-el{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    width: 70%;
+    height: 4rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: background-color .5s;
+}
+
+.home-page-nav-el:hover{
+    background-color: rgba(211, 211, 211, 0.4);;
 }
 
 .nav-name{
     margin-left: 10px;
+    font-size: 1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .nav-icon{
-    color:#fff7c0
+    color:#fff7c0;
+    font-size: 1.5rem;
 }
