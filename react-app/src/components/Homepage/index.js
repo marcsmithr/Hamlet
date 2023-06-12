@@ -1,14 +1,15 @@
 import React from "react";
+import HomepageNav from "./HomepageNav";
 
 export default function HomePage(){
     return (
         <>
             <div className="home-page-body">
                 <div className="home-page-content">
-                    <div className="navigational-column">
-                        
+                    <div className="home-navigational-column">
+                        <HomepageNav/>
                     </div>
-                    <div className="content-column">
+                    <div className="home-content-column">
                         <div className="create-content">
 
                         </div>
@@ -16,7 +17,7 @@ export default function HomePage(){
 
                         </div>
                     </div>
-                    <div className="engagement-column">
+                    <div className="home-engagement-column">
 
                     </div>
 
