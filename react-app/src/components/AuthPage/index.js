@@ -10,24 +10,24 @@ function AuthPage(){
     const signUpFormId = !isLogin? "" : "hidden"
 
     return(
-        <>
+        <div className="auth-page">
             <div>
                 <div className='home-icon-container'>
                     <img className='home-icon' src='https://i.ibb.co/bPPwj59/hamlet-home.png' alt='A home icon featuring a colorful hamlet'/>
                     <span>Hamlet</span>
                 </div>
             </div>
-            <div id={loginFormId}>
+            <div className="login-form-container" id={loginFormId}>
                 <LoginForm/>
                 <span>New to Hamlet?</span>
                 <span onClick={()=>setIsLogin(false)}>Sign Up</span>
             </div>
-            <div id={signUpFormId}>
+            <div className="signup-form-container" id={signUpFormId}>
                 <SignUpForm/>
                 <span>Already have an account?</span>
                 <span onClick={()=>setIsLogin(true)}>Log In</span>
             </div>
-        </>
+        </div>
     )
 };
 

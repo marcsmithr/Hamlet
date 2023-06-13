@@ -4,3 +4,7 @@ body{
     margin: 0px;
     background-color: #db84a0b2;
 }
+
+#hidden{
+    visibility: hidden;
+}
