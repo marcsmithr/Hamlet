@@ -1,0 +1,15 @@
+.auth-page{
+    position: relative;
+}
+
+.login-form-container{
+    position: absolute;
+    top: 30vh;
+    right: 40vw;
+}
+
+.signup-form-container{
+    position: absolute;
+    top: 30vh;
+    right: 40vw;
+}
