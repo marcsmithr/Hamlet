@@ -31,6 +31,15 @@ function ProfileButton(){
             <button className='profile-icon-container' onClick={openMenu}>
                 <i class="fa-solid fa-user"></i>
             </button>
+            <ul className={ulClassName} ref={ulRef}>
+                <div className="dropdown-menu">
+                    <>
+                        <li>
+                            <button className="login-button1" onClick={logout}>Log Out</button>
+                        </li>
+                    </>
+                </div>
+            </ul>
         </div>
       )
 }
