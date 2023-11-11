@@ -23,4 +23,14 @@ function ProfileButton(){
 
         return () => document.removeEventListener("click", closeMenu);
       }, [showMenu]);
+
+      let ulClassName = "profile-dropdown" + (showMenu ? "" : " hidden");
+
+      return (
+        <div className="profile-button-container">
+            <button className='profile-icon-container' onClick={openMenu}>
+                <i class="fa-solid fa-user"></i>
+            </button>
+        </div>
+      )
 }
