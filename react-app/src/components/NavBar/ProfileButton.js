@@ -5,6 +5,9 @@ import { Link, NavLink, useHistory } from "react-router-dom";
 import './ProfileButton.css'
 
 function ProfileButton(){
+    const dispatch = useDispatch();
+    const history = useHistory();
+    const ulRef = useRef();
     const [showMenu, setShowMenu] = useState(false);
 
     const openMenu = () => {
@@ -23,6 +26,13 @@ function ProfileButton(){
 
         return () => document.removeEventListener("click", closeMenu);
       }, [showMenu]);
+
+      const logout = (e) => {
+        e.preventDefault();
+        dispatch(sessionActions.logout());
+        setShowMenu(false)
+        history.push('/')
+      };
 
       let ulClassName = "profile-dropdown" + (showMenu ? "" : " hidden");
 
