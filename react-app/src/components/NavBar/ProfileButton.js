@@ -5,5 +5,22 @@ import { Link, NavLink, useHistory } from "react-router-dom";
 import './ProfileButton.css'
 
 function ProfileButton(){
-    const [showMenu, setshowMenu] = useState(false);
+    const [showMenu, setShowMenu] = useState(false);
+
+    const openMenu = () => {
+        if (showMenu) return;
+        setShowMenu(true);
+    };
+
+    const closeMenu = () => {
+        setShowMenu(false);
+    };
+
+    useEffect(() => {
+        if (!showMenu) return;
+
+        document.addEventListener('click', closeMenu);
+
+        return () => document.removeEventListener("click", closeMenu);
+      }, [showMenu]);
 }
