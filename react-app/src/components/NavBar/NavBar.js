@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import LogoutButton from '../auth/LogoutButton';
+import ProfileButton from './ProfileButton'
 import './NavBar.css'
 
 const NavBar = () => {
@@ -86,9 +87,10 @@ const NavBar = () => {
          <i class="fa-solid fa-bell"></i>
         </div>
 
-        <div className='profile-icon-container'>
+        {/* <div className='profile-icon-container'>
           <i class="fa-solid fa-user"></i>
-        </div>
+        </div> */}
+        <ProfileButton/>
       </div>
     </nav>
   );
